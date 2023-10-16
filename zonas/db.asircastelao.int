@@ -7,8 +7,8 @@ $TTL 38400	; 10 hours 40 minutes
 				38400      ; minimum (10 hours 40 minutes)
 				)
 @		IN NS	ns.asircastelao.int.
-pag1		IN A		172.28.5.1
+pag1	IN A		172.28.5.1
 pag2	IN A		172.28.5.4
-pag3		IN A 		172.28.5.7
-www	IN CNAME	test
+pag3	IN A 		172.28.5.7
+www		IN CNAME	test
 global	IN TXT		mensaje
