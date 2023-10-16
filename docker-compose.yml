@@ -1,6 +1,6 @@
 services:
   bind9:
-      image: internetsystemsconsortium/bind9:9.16
+      image: ubuntu/bind9
       container_name: bind9.16
       ports:
         - "53:53/tcp"
@@ -10,7 +10,7 @@ services:
           ipv4_address: 172.0.8.152
       volumes:
         - ./conf:/etc/bind
-        - ./lib:/etc/bind
+        - ./zonas:/var/lib/bind
 networks:
   bind916_subnet: 
     external: true
